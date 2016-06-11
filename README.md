@@ -1,2 +1,2 @@
-# kimono
+# KimonoHub
 KimonoHub test

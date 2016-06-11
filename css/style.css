@@ -1,0 +1,445 @@
+/*
+	*******************
+	**** Reset CSS ****
+	*******************
+	- http://meyerweb.com/eric/tools/css/reset/ 
+	- v2.0 | 20110126
+	- License: none (public domain)
+	*******************
+	*******************
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+	*******************
+	**** Border Box ***
+	*******************
+*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+	*******************
+	**** Common CSS ***
+	*******************
+*/
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100%;
+	background: #ECEFF1;
+}
+
+
+h2 {
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin-bottom: 1%;
+}
+
+.btn {
+	height: 40px;
+	color: #fff;
+	font-size: 1.2rem;
+	font-weight: 300;
+	background-color: #4D90FE; 
+  border: none;
+  border-radius: 1px;
+  padding: 10px 20px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+	background-color: #307AF3;
+}
+
+.input {
+  height: 40px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 12px;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 1px;
+}
+
+.input:hover {
+	border-color: #C0C0C0;
+}
+
+.input:focus {
+	border-color: #4D90FE;
+}
+
+
+/*
+	*******************
+	**** Header CSS ***
+	*******************
+*/
+
+header {
+  background: #fff;
+  color: #333;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,.05),0 2px 4px 0 rgba(0,0,0,.06);
+}
+
+.header {
+	max-width: 1100px;
+  margin: 0 auto 1.5%;
+  padding: .6% 0;
+}
+
+.header div {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+.header .icon img {
+	width: 50px;
+	padding: 8px 5px;
+}
+
+.header .company-icon img {
+	width: 100px;
+	padding: 10px 5px;
+	border: 4px solid #ccc;
+	border-radius: 4px;
+}
+
+.header .page-title {
+	margin: .2% .5% 0;
+	padding-bottom: 10px;
+}
+
+.header .ask-question {
+	margin: 1%;
+	margin-right: 0;
+	float: right;
+}
+
+.header .search-box {
+	margin: 1%;
+	margin-right: 0;
+	padding: 0;
+	float: right;
+	width: 250px;
+	height: 40px;
+}
+
+.header .search-box input {
+	margin: 0;
+	width: 80%;
+	height: 100%;
+	outline: none;
+	border: none;
+	font-size: 1.2rem;
+	font-weight: 200;
+	padding-left: 5px;
+}
+
+.header .search-box img {
+	width: 25px;
+	vertical-align: text-bottom;
+}
+/*
+	*******************
+	** Body Wrapper ***
+	*******************
+*/
+.wrapper {
+	max-width: 1100px;
+	width: 1100px;
+	margin: 0 auto;
+}
+
+/*
+	*******************
+	** Body Wrapper ***
+	*******************
+*/
+
+.body-wrapper {
+	width: 72%;
+	display: inline-block;
+}
+
+.story {
+	background-color: #FFF;
+	border-radius: 2px;
+	padding: 1.5% 2%;
+	margin-bottom: 2.5%;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.24);
+}
+
+.story > div {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.votes {
+	text-align: center;
+	color: #999;
+}
+
+.votes .arrow img{
+	width: 25px;
+	padding:  2px 5px;
+	margin-left: 2%;
+	cursor: pointer;
+}
+.votes .arrow {
+	border-radius: 2px;
+}
+
+.votes .arrow:hover {
+	background-color: #F1F1F1;
+	transition: all 0.25s ease;
+}
+
+.votes .score {
+	font-size: 1.2rem;
+	font-weight: 900;
+}
+
+.entry {
+	width: 78%;
+	margin: 2% 1%;
+	vertical-align: baseline;
+	line-height: 1.4;
+}
+
+.entry a{
+	font-size: 1rem;
+	text-decoration: none;
+	color: #3498DB;
+}
+
+.actions li {
+	display: inline;
+}
+
+.actions li a {
+	color: #888;
+	font-size: .8rem;
+	margin-right: 1%;
+}
+
+.actions li a:hover {
+	color: #444;
+}
+
+.info {
+	height: 55px;
+	width: 55px;
+	color: #FFF;
+	padding-top: 13px;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.info .count {
+	font-weight: 400;
+	font-size: 1rem;
+}
+
+.info .activity {
+	font-size: .7rem;
+	font-weight: 300;
+}
+
+.answers {
+	background-color: #607D8B;
+	margin-right: 5px;
+}
+
+.vote-count{
+	background-color: #26A69A;
+	margin-right: 0px;
+}
+
+/*
+	*******************
+	*** Right Panel ***
+	*******************
+*/
+
+.right-panel {
+	width: 27%;
+	display: inline-block;
+	float: right;
+}
+
+.right-panel > div {
+	background-color: #FFF;
+	padding: 5%;
+	margin-bottom: 10%;
+	box-shadow: 0px 1px 5px rgba(0,0,0,0.24);
+}
+
+.right-panel div h3 {
+	font-weight: 900;
+	font-size: 1.4rem;
+	margin-bottom: 4%;
+}
+
+.right-panel div p {
+	line-height: 2;
+}
+
+.right-panel div span {
+	font-size: 0.9rem;
+	vertical-align: text-top;
+}
+
+.right-panel div input {
+	margin: 5% 1%;
+	width: 65px;
+}
+
+.submit {
+	width: 100px;
+	background-color: #eee;
+	color: #000;
+}
+
+.submit:hover {
+	background-color: #ddd;
+}
+
+.right-panel textarea {
+	margin: 5% 5% 5% 0;
+	height: 120px;
+  padding: 5px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+  resize: none;
+}
+
+.time-box {
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	background-color: #222;
+	color: #FFF;
+	padding-top: 12px;
+	border-radius: 2px;
+	margin: 5% 0;
+}
+
+.time-box .value {
+	font-weight: 600;
+}
+
+.time-box .unit {
+	font-size: 0.9rem;
+	font-weight: 300;
+	padding-top: 5px;
+}
+
+.company {
+	background-color: #F8F8F8;
+	border-radius: 2px;
+	padding: 5% 1%;
+	cursor: pointer;
+	margin: 5% 0;
+}
+
+.company:hover {
+	background-color: #EEE;
+	transition: all 0.25s ease;
+}
+
+.company img {
+	width: 100px;
+	padding: 5% 2% 0;
+}
+
+.company div {
+	display: inline-block;
+}
+
+.company div h4 {
+	font-weight: 600;
+	font-size: 1.1rem;
+}
+
+/*
+	*******************
+	**** Footer *******
+	*******************
+*/
+
+footer {
+	max-width: 1100px;
+	width: 1100px;
+	margin: 1% auto 1%;
+	padding: 20px 0;
+}
+
+footer ul li {
+	display: inline;
+}
+
+footer ul li a{
+	text-decoration: none;
+	color: #888;
+	padding: 5px 10px;
+	border-radius: 2px;
+	transition: all 0.25s ease;
+}
+
+footer ul li a:hover {
+	background-color: #DDD;
+}
