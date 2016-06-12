@@ -209,7 +209,7 @@ header {
 */
 
 .body-wrapper {
-	width: 72%;
+	width: 71.5%;
 	display: inline-block;
 }
 
@@ -252,7 +252,7 @@ header {
 }
 
 .entry {
-	width: 78%;
+	width: 77%;
 	margin: 2% 1%;
 	vertical-align: baseline;
 	line-height: 1.4;
@@ -316,7 +316,8 @@ header {
 .right-panel {
 	width: 27%;
 	display: inline-block;
-	float: right;
+	vertical-align: top;
+  margin-left: 1%;
 }
 
 .right-panel > div {
@@ -412,7 +413,7 @@ header {
 
 .company div h4 {
 	font-weight: 600;
-	font-size: 1.1rem;
+	font-size: 1rem;
 }
 
 /*
